@@ -1,0 +1,135 @@
+.app-container {
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom, #bb959e, #9796f0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+.responsive-container {
+  max-width: 1140px;
+  width: 85%;
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 50px 60px 50px 65px;
+}
+@media screen and (max-width: 575px) {
+  .responsive-container {
+    padding: 35px 25px 35px 25px;
+  }
+}
+.heading {
+  color: #171f46;
+  font-size: 34px;
+  font-weight: 600;
+}
+@media screen and (max-width: 575px) {
+  .heading {
+    font-size: 24px;
+  }
+}
+.appointments-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.input-sec-img {
+  order: 2;
+  width: 45%;
+}
+@media screen and (max-width: 575px) {
+  .input-sec-img {
+    display: none;
+  }
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  /* flex-grow: 1; */
+  width: 45%;
+}
+@media screen and (max-width: 575px) {
+  .form {
+    width: 100%;
+  }
+}
+.label {
+  color: #b5b7c4;
+  font-size: 14px;
+  font-weight: 500;
+}
+.input {
+  border: 1px solid #171f46;
+  color: #b5b7c4;
+  border-radius: 4px;
+  outline: none;
+  padding: 10px;
+  margin: 8px 0px 20px 0px;
+}
+.button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #8b5cf6;
+  padding: 10px;
+  border-radius: 4px;
+  width: 60px;
+}
+.separator {
+  border: 1px solid #b5b7c4;
+  margin: 20px 0px 20px 0px;
+  height: 1px;
+}
+@media screen and (min-width: 725px) {
+  .separator {
+    margin: 20px 0px 30px 0px;
+  }
+}
+.header-filter-container {
+  display: flex;
+  justify-content: space-between;
+}
+.appointment-heading {
+  color: #171f46;
+  font-size: 34px;
+  font-weight: 600;
+  margin: 0px;
+}
+@media screen and (max-width: 575px) {
+  .appointment-heading {
+    font-size: 24px;
+  }
+}
+.starred-btn {
+  outline: none;
+  border-radius: 20px;
+  width: 80px;
+  font-weight: 600;
+  height: 25px;
+  padding: 0px 10px 0px 10px;
+}
+.filter-active-bg {
+  background-color: #9897f0;
+  color: #ffffff;
+  font-weight: 600;
+  border: none;
+}
+.filter-inactive-bg {
+  border: 2px solid #9897f0;
+  color: #9897f0;
+  background-color: transparent;
+}
+.appointments-list {
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 24px;
+}
+@media screen and (min-width: 768px) {
+  .appointments-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
